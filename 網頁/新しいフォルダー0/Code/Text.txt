@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<video id="myvideo1" controls
+       style="width: 320px; height: 240px; outline: none;">
+  <source src="/media/movie.mp4" type="video/mp4">
+  <source src="/media/movie.ogg" type="video/ogg">
+</video>
+
+<iframe id="myvideo" src="demo_iframe.htm"style="object-fit:cover;   
+		position:absolute;
+		top: 0;
+		left: 0; 
+		width:10%;
+		height:10%;" name="iframe_a" ></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a" onclick="toggle();" >W3Schools.com</a></p>
+
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+<script>
+  let toggle = () => {
+     let element = document.getElementById("myvideo");
+     if (element.style.width === "320px") {
+       element.style.width ="100%";
+       element.style.height ="100%";
+     } else {
+       element.style.width = "100%";
+       element.style.height = "100%";
+     }
+  }
+</script>
+</body>
+</html>
+

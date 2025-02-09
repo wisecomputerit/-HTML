@@ -1,0 +1,238 @@
+**
+<!--Background-mp4-->
+<!--定义和用法 loop 属性规定当视频结束后将重新开始播放。如果设置该属性，则视频将循环播放。一般背景情況不加入長寬  <video   loop autoplay muted>-->
+<!--這邊一次性動畫 靜音 這邊打算處理前背景處理所以加入長寬 muted=靜音 -->
+<!--
+        <video  width="1920 " height="1080"  autoplay muted>
+            <source type="video/mp4" src="Anime Background.mp4">
+        </video>
+  
+  -->
+
+**
+ <!--Background-mp4(未加入長寬 全頻使用 不靜音 一次性使用)-->
+  <video   autoplay  
+		style="object-fit:cover;   
+		position:absolute;
+		top: 10;
+		left: 0; 
+		width:100%;
+		height:100%;" >
+            <source type="video/mp4" src="OP3.mp4">
+        </video>
+
+
+
+
+**
+<!--font-size: 9pt; 字體大小  clear: both; 兩角   text-align: center; 字體到中間 	font-family:DFKai-sb; 標楷體代碼亮亮
+<footer style="clear: both;
+	line-height: 40px;
+	text-align: center;
+	font-size: 9pt;
+	border-top: 1px solid rgba(195,195,195,1.00);
+	margin-right: 10px;
+	margin-left: 10px;
+	font-family:DFKai-sb;
+	"
+	><small>Copyright <img src="https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f4d6.png" width=10 height=10> 2023. All rights reserved. | 隱私權 | 使用條款 | 本之者 | スー・ウェイゼ </small></footer>	 
+   <!--版權一段加入-->
+
+
+**
+<!-- 開起需要事件代碼 <a href="連結網址" target="連結目標" title="替代文字">顯示內容</a>-->
+注意 代碼亮亮 target
+target="_blank" - 意思是在新視窗開啟
+target="_self" - 意思是在原本的視窗開啟
+target="_parent" - 意思是在父層視窗開啟
+<p><a href="https://www.w3schools.com" target="_self">W3Schools.com</a></p>
+
+
+**
+注意  target 與 name 一樣 這邊此用iframe 視窗
+<iframe src="demo_iframe.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+**
+這邊強制整個頁面換成別的
+  <iframe src="demo_iframe.htm" style="object-fit:cover;   
+		position:absolute;
+		top: 10;
+		left: 0; 
+		width:100%;
+		height:100%;" title="Iframe Example"></iframe>
+
+
+
+**
+<!-- Background_布景內容+MP3 -->
+<!--embed-最後一段背景音樂autostart="true" 隱藏還是有算一行 所以最後完成 並不支持所有瀏覽器，只有播放一次特別情況使用-->
+
+  <embed name="GoodEnough" src="music/apple.mp3" loop="false" hidden="true" autostart="true"> 
+
+
+**
+<!--若使用其他瀏覽器-補上 loop 属性规定当视频结束后将重新开始播放--> 
+  
+   <iframe src="Anime Background.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio id="player" preload="auto" autoplay loop>
+        <source src="music/apple.mp3" type="audio/mp3">
+    </audio>
+
+***
+<!--button-->
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()"> <img  src="5-19-1.jpg"><br>Click me to display Date and Time.</button>
+<p id="demo"></p>
+
+
+***
+<!--button-->
+<input type="button" style="width:858px;height:452px;background-image:url('5-19-1.jpg');"onclick="document.getElementById('demo1').innerHTML = Date()"></input>
+
+<p id="demo1"></p>
+
+***
+
+//--按鈕+圖片--//
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()"> <img  src="5-19-1.jpg"><br>Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<input type="button" style="width:858px;height:452px;background-image:url('5-19-1.jpg');"onclick="document.getElementById('demo1').innerHTML = Date()"></input>
+
+//----標準框下按鈕------//
+<fieldset>
+  <legend style="	text-align: center;">ボタンコントロール</legend>
+<input type="button" style=" width:100px;height:50px;background-image:url('5-19-1.jpg');"onclick="document.getElementById('demo1').innerHTML = Date()"></input>
+  
+</fieldset>
+
+ //----框框代碼------//
+  <!--https://www.runoob.com/try/try.php?filename=trycss3_box-sizing_new-->
+  <div class="div1"style=
+"width: 300px;
+    height: 100px;
+    border: 1px solid blue;">ボタンコントロール </div>
+***
+
+<!--不貼牆壁的代碼  margin: 20px  https://www.wibibi.com/info.php?tid=110 按鈕件的代碼 -->
+
+<fieldset style=" 
+width: 300px; 
+ height: 150px;
+ margin: 20px 20px 20px 20px;
+ 
+ ">
+  <legend style="	text-align: center; ">ボタンコントロール</legend>
+
+	<!--上--><!--fieldset width: 300px; OK-->
+<input  type="button" style="  
+width: 60px; 
+ height: 60px;  
+margin:0px 150px 5px ;
+ background-image:url('5-19-1.jpg');
+ 
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+ </input >
+ 
+  <br> <!--下一行 margin:上 右 下 左 -->
+ <!--左-->
+ <input type="button" style="  
+width: 60px; 
+ height: 60px; 
+ margin: 0px 10px 0px  75px;
+ background-image:url('5-19-1.jpg');
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+
+ <!--下-->
+ <input type="button" style="  
+width: 60px; 
+ height: 60px; 
+ margin: 0px 10px 0px 0px;
+ background-image:url('5-19-1.jpg');
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+ 
+ <!--右-->
+ <input type="button" style="  
+width: 60px; 
+ height: 60px; 
+ margin: 0px 10px 0px 0px;
+ background-image:url('5-19-1.jpg');
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+  
+</fieldset>
+
+
+**** 主要值得注意的代碼 - <p><script> 這邊 JavaScript 這邊處理掉
+
+<p id="demo"></p>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>//--這裡是瀏覽器出問題顯示的文字--//
+<p><script> document.getElementById("demo").innerHTML = "Hello JavaScript!";</script></p>
+ 
+
+//--------基本正確寫法---//
+<p id="demo"><script>document.getElementById("demo").innerHTML = 'John Doe';</script></p>
+
+
+
+//--------基本寫法 動畫完成後寫法---//
+
+  <!--top:0 測試代碼關係   location.href = "ContentElements.html"; -->
+  
+        <video   autoplay  
+		style="object-fit:cover;   
+		position:absolute;
+		top: 10;
+		left: 0; 
+		width:100%;
+		height:100%;" 
+		preload="auto"
+		src="OP3.mp4" 
+		type="video/mp4"
+		
+		 id="video">
+
+		<script> 
+              
+		  < 強制須告一個 新たに宣言する 記載時間> 
+		  var audio = new Audio('OP3.mp4')
+           // 元数据已加载
+          audio.addEventListener("loadedmetadata", function (e) {
+             let duration = audio.duration; 
+		    
+		  var x = document.getElementById("video").duration;   < 配合ID一個 記載時間> 
+                 //-duration-或--duration-- 取他的值//
+	        document.getElementById("demo").innerHTML =x+"時間 填寫到 <meta> + content=值";  		 
+		  
+		  });
+         
+
+
+		</script>
+		  <!--top:0 https://ithelp.ithome.com.tw/articles/10207090-->
+		<meta http-equiv="refresh" content="92.508299; url=ContentElements.html">
+        </video>
+	<!--ボタン-- 通常、映画が終わった後またはゲーム モード ボタンが反応して次の HTML ページを通知します-->		
+
+//----------上傳檔案 HTML -----------------------//
+
+
+<fieldset style=" 
+width: 100px; 
+height: 50px;
+ margin: 20px 20px 20px 20px;
+ ">
+ <legend style="	text-align: center;">アップロード</legend>
+ 
+ <!--使用 <input type="file" /> 取得使用者想要上傳的檔案：
+multiple 屬性可以一次上傳多個檔案
+accept 屬性可以限制上傳檔案的類型
+!-->
+
+<input type="file" id="file-uploader">
+ </fieldset>
+
+ //---------------------------------//

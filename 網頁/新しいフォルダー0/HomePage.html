@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--ウェブサイト名-->
+<title>ウェブ開発 </title>
+
+<!--基本的には通常表示-->
+<meta charset="utf-8">
+
+<!--設定瀏覽器的css來說viewport其實是1366 x 1024 px 通長網頁是width -->
+<!--網址_由於後面使用者本身自行去設定縮小 我這就不追加設置  https://medium.com/frochu/html-meta-viewport-setting-69fbb06ed3d8-->
+<meta name="viewport" content="width=device-width">
+
+
+<!--最初のファイル start-HTML はスキーマ HOME に属します-->
+<link rel="start" href="https://Fantasyisland.com/" title="HOME">
+
+<!--設定標準網站名稱-->
+<link rel="canonical" href="https://Fantasyisland.com/">
+
+
+<!--ロゴデザイン-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<!--ロゴ-リンゴのデザイン-->
+ <link rel="apple-touch-icon" href="image-favicon/Myproject.png">
+ <link rel="apple-touch-icon" sizes="168x152" href="image-favicon/Myproject.png">
+ <link rel="apple-touch-icon" sizes="185x167" href="image-favicon/Myproject 1.png">
+ <link rel="apple-touch-icon" sizes="199x180" href="image-favicon/apple-touch-icon-180x180.png">
+ 
+</head>
+
+<!--HTML-->  <!--テストボタンツール- <video> top: 10; 要調整測試  Background 動畫完 直接轉移到ContentElements.html 本時窗及時使用 preload="auto" 自動預先下載全部視訊和音訊   preload="metadata" 瀏覽器應該在頁面加載時加載整個視頻--->	
+
+
+<!-- Anime Background -->
+        
+   <p>test <a href="music/apple.mp3">Fantasy island | ウェブ開発 -MP3測試紐</a> <!--OK-->	
+   <p id="demo"></p>
+
+  <!--top:0 測試代碼關係    -->
+  
+        <video   autoplay  
+		style="object-fit:cover;   
+		position:absolute;
+		top: 0;
+		left: 0; 
+		width:100%;
+		height:100%;" 
+		preload="auto"
+		src="OP3.mp4" 
+		type="video/mp4"
+		id="video">
+		<script> 
+          
+		  var x = document.getElementById("video").duration;
+           <!-- document.getElementById("demo").innerHTML =x+"時間 填寫到 <meta> + content=值"; 
+          
+		  <!--  location.href = "ContentElements.html";  直接挑轉超連結-->
+		   
+		</script>
+		  <!--top:0 https://ithelp.ithome.com.tw/articles/10207090-->
+		<meta http-equiv="refresh" content="92.508299; url=ContentElements.html">
+        </video>
+	<!--ボタン-- 通常、映画が終わった後またはゲーム モード ボタンが反応して次の HTML ページを通知します-->		
+
+</html>
+
+

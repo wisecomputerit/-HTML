@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<!--基本的には通常表示-->
+<meta charset="utf-8">
+
+<!--設定瀏覽器的css來說viewport其實是1366 x 1024 px 通長網頁是width -->
+<!--網址_由於後面使用者本身自行去設定縮小 我這就不追加設置  https://medium.com/frochu/html-meta-viewport-setting-69fbb06ed3d8-->
+<meta name="viewport" content="width=device-width">
+
+
+<!--ロゴデザイン-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<!--ロゴ-リンゴのデザイン-->
+ <link rel="apple-touch-icon" href="image-favicon/Myproject.png">
+ <link rel="apple-touch-icon" sizes="168x152" href="image-favicon/Myproject.png">
+ <link rel="apple-touch-icon" sizes="185x167" href="image-favicon/Myproject 1.png">
+ 
+<body>
+
+
+
+<h2>HTML Iframes - 圖示 LOGO  OK</h2>
+<p> 檔案上傳 MMD 模型的素材檔案  3D人物直接在網頁上</p>
+<br>
+<p>基本上傳按鈕- 人物的特效 - 上下左右走動 即可 基本先完成 不使用 flash地址 那要支援外掛 </p>
+
+
+
+
+
+ <p>test <a href="music/apple.mp3">Fantasy island | ウェブ開発 -MP3測試紐</a> <!--OK-->	
+   <p id="demo"></p>
+
+
+
+<fieldset style=" 
+width: 600px; 
+height: 520px;
+ margin: 20px 20px 20px 20px;
+ ">
+ 
+ 
+
+ <legend style="text-align: center;">アップロード</legend>
+ 
+ 
+ 
+ <!--使用 <input type="file" /> 取得使用者想要上傳的檔案：
+multiple 屬性可以一次上傳多個檔案
+accept 屬性可以限制上傳檔案的類型
+<input type="file" name="file[]" multiple="multiple"  required="required" draggable="true"/>
+<input type="submit" value="Upload"/>
+
+!-->
+
+<!-- <input type="file" id="file-uploader">!-->
+
+<h3 style=" margin:0px 0px 15px 170px">プレビュー画像</h3>
+<table >
+  <tr>
+    <th >上</th>
+    <th>下</th>
+  
+  </tr>
+  
+  <!-- -----------------圖片上傳區------- align="center" valign="center" 置中語法------------------------->
+  <tr>
+  
+  
+  <td >
+    <!-- ---------------往上的圖檔區-------------------------------->
+  <input type="file" onchange="upside(this.files)"  id="upside_testFile"  /><img id="upside_image" style="width: 170px; height:170px;margin:auto;　"/>
+  
+  </td>
+  
+       <!-- ---------------往下的圖檔區-------------------------------->
+ <td>
+ <input type="file" onchange="up(this.files)" id="up_testFile"  /> <img id="up_image" style="width: 170px; height: 170px;margin:auto;　"/>
+ 
+ </<td>
+
+</tr>
+
+  <tr>
+  <th>左</th>
+    <th>右</th>
+</tr>
+
+
+
+  <tr>
+  
+<!-- ----------------------往左的圖檔區--------------------------->
+  <td>
+  <input type="file" onchange="left(this.files)" id="left_testFile"  /><img id="left_image" style="width: 170px; height: 170px;margin:auto;　"/>
+  
+  </td>
+  
+  <!-- -----------------往右的圖檔區-------------------------------->
+    <td>
+	<input type="file" onchange="right(this.files)" id="right_testFile"  /><img id="right_image" style="width: 170px; height: 170px; margin:auto;　"/>
+</td>
+
+
+</tr>
+
+
+<script>
+function upside(files) {
+    if (!files.length) {
+        return false;
+    }
+	
+    let reader = new FileReader();
+    reader.onload = function () {
+ 	document.getElementById('upside_image').src = this.result;
+    };
+	var file = document.getElementById('upside_testFile').files[0];
+    reader.readAsDataURL(file);
+}
+
+function up(files) {
+    if (!files.length) {
+        return false;
+    }
+
+    let reader = new FileReader();
+    reader.onload = function () {
+        document.getElementById('up_image').src = this.result;
+    };
+	var file = document.getElementById('up_testFile').files[0];
+    reader.readAsDataURL(file);
+}
+
+function left(files) {
+    if (!files.length) {
+        return false;
+    }
+
+    let reader = new FileReader();
+    reader.onload = function () {
+        document.getElementById('left_image').src = this.result;
+    };
+	var file = document.getElementById('left_testFile').files[0];
+    reader.readAsDataURL(file);
+}
+function right(files) {
+    if (!files.length) {
+        return false;
+    }
+
+    let reader = new FileReader();
+    reader.onload = function () {
+        document.getElementById('right_image').src = this.result;
+    };
+	var file = document.getElementById('right_testFile').files[0];
+    reader.readAsDataURL(file);
+}
+</script>
+</table>
+
+<!--main JSP text 給後臺PHP 即可-->
+  </fieldset>
+ <!------------------------------------------- -->
+
+
+  <fieldset style=" 
+width: 400px; 
+ height: 450px;
+ margin: 20px 20px 20px 20px;
+ ">
+  <legend style="	text-align: center;">表示画面</legend>
+  
+  
+  
+  <img id="image" src="smiley.gif" width="400" height="420">
+  
+  
+  
+  
+  
+  <script>
+document.getElementById("image").src = "5-19-1.jpg";
+</script>
+  
+  
+  
+  
+  
+  
+  
+  
+   </fieldset>
+ <!------------------------------------------- -->
+ 
+ 
+ 
+
+
+
+
+
+<!--不貼牆壁的代碼  margin: 20px  https://www.wibibi.com/info.php?tid=110 -->
+
+<fieldset style=" 
+width: 300px; 
+ height: 160px;
+ margin: 20px 20px 20px 20px;
+ 
+ ">
+  <legend style="	text-align: center;">ボタンコントロール</legend>
+
+	<!--上--><!--fieldset width: 300px; OK-->
+<input  type="button" style="  
+width: 60px; 
+ height: 60px;  
+margin:0px 150px 5px ;
+ background-image:url('5-19-1.jpg');
+ 
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+ </input >
+ 
+  <br> <!--下一行 margin:上 右 下 左 -->
+ <!--左-->
+ <input type="button" style="  
+width: 60px; 
+ height: 60px; 
+ margin: 0px 10px 0px  75px;
+ background-image:url('5-19-1.jpg');
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+
+ <!--下-->
+ <input type="button" style="  
+width: 60px; 
+ height: 60px; 
+ margin: 0px 10px 0px 0px;
+ background-image:url('5-19-1.jpg');
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+ 
+ <!--右-->
+ <input type="button" style="  
+width: 60px; 
+ height: 60px; 
+ margin: 0px 10px 0px 0px;
+ background-image:url('5-19-1.jpg');
+ "onclick="document.getElementById('demo1').innerHTML = Date()">
+  
+</fieldset>
+
+
+
+
+
+
+
+<p id="demo1"></p>
+<p><a href="HomePage.html" target="_self">Fantasyisland.com- 測試紐</a></p>
+
+<footer style="clear: both;
+	line-height: 40px;
+	text-align: center;
+	font-size: 9pt;
+	border-top: 1px solid rgba(195,195,195,1.00);
+	margin-right: 10px;
+	margin-left: 10px;
+	font-family:DFKai-sb;
+	"
+	><p>Copyright  2023. All rights reserved. | 隱私權 | 使用條款 | 本之者 | スー・ウェイゼ </p>
+   </footer>	 
+   <!--版權一段加入OK-->
+ <embed name="GoodEnough" src="music/BLEACH 死神 ED1【Rie fu - Life is Like a Boat】中日翻譯 羅馬拼音歌詞.mp3" loop="false" hidden="true" autostart > 
+   <!--音樂一段加入OK-->
+
+
+</body>
+</html>
