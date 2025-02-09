@@ -1,0 +1,12 @@
+@font-face {
+   font-family: 'NotoSansTC Black';
+   font-style: normal;
+   font-weight: 900;
+   src: url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'),
+        url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'),
+        url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
+ }
+.text-NotoSansTC-Black{
+	font-family: 'NotoSansTC Black';
+	color: crimson;
+}

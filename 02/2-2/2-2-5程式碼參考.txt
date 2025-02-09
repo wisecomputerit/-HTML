@@ -1,0 +1,12 @@
+	outline: 1px solid red ;
+	outline-offset: -30px;	
+
+
+
+
+
+	border-image-source: url("images/border-img.png");
+	border-image-slice: 50;
+	border-image-width: 2em;
+	border-image-outset: 20px;
+	border-image-repeat: round;

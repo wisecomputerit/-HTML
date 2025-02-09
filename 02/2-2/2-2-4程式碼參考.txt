@@ -1,0 +1,4 @@
+background-image: url(images/ps-icon.png),url(images/ai-icon.png),url(images/dw-icon.png),url(images/id-icon.png),url(images/cc-bg.jpg);
+background-repeat: no-repeat;
+background-size: 100px 100px,50px 50px,80px 80px,70px 70px, cover;
+background-position: 15px 400px, 150px 250px, 250px 480px, 550px 100px, center center;

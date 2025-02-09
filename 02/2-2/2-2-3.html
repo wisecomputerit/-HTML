@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>css3</title>
+<style type="text/css">
+body {
+	background-image: url(images/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #B6AFA9;
+	font-family: "微軟正黑體";
+}
+.container h2 {
+	color: #595958;
+	border-bottom: 5px solid #D4D4D4;
+	padding-bottom: 8px;
+	margin: 0px;
+}
+.container {
+	background-color: #FFFFFF;
+	width: 1000px;
+	margin-top: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	min-height: 500px;
+	padding: 50px;
+}
+.container p {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.text-overflow1{
+    width:500px;
+	overflow:hidden;
+    border:1px #666666 solid;
+    margin-bottom:5px;
+	padding: 20px 0;
+	white-space:nowrap;
+}
+.text-overflow2{
+    width:500px;
+    overflow:hidden;
+    border:1px #666666 solid;
+    margin-bottom:5px;
+	padding: 20px 0;
+	white-space:nowrap;
+}
+.text-overflow3{
+    width:500px;
+    overflow:hidden;
+    border:1px #666666 solid;
+	padding: 20px 0;
+	white-space:nowrap;
+}
+.text-word-wrap{
+	width:300px;
+    border:1px gray solid;
+	padding: 20px 0;
+}
+.text-word-break{
+    width:500px;
+    border:1px gray solid;
+    word-break: keep-all ;	
+	padding: 20px 0;
+}
+.text-word-wrap{
+	width:300px;
+    border:1px gray solid;
+	padding: 20px 0;
+}
+.text-word-break{
+    width:500px;
+    border:1px gray solid;
+	padding: 20px 0;
+}	
+
+
+</style>
+</head>
+
+<body>
+<div class="container"> 
+  <h2><strong>CSS3  文字相關屬性</strong></h2>
+  <p class="text-overflow1">CSS不能單獨使用，必須與HTML或XML一起協同工作，為HTML或XML起裝飾作用。</p>
+  <p class="text-overflow2">本文主要介紹用於裝飾HTML網頁的CSS技術。其中HTML負責確定網頁中有哪些內容，CSS確定以何種外觀(大小、粗細、顏色、對齊和位置)展現這些元素。CSS可以用於設定頁面布局、設定頁面元素樣式、設定適用於所有網頁的全局樣式。</p>
+  <p class="text-overflow3">CSS可以零散地直接添加在要應用樣式的網頁元素上，也可以集中化內建於網頁、連結式引入網頁以及匯入式引入網頁。</p>
+  <p class="text-word-wrap">Aequeosalinocalcalinoceraceoaluminosocupreovitriolic形容英格蘭格洛斯特夏布瑞斯陀這個地方的礦泉水成分</p>
+  <p class="text-word-break">You will learn many aspects of styling web pages! You'll be able to set up the correct file structure, edit text and colors, and create attractive layouts. With these skills, you'll be able to customize the appearance of your web pages to suit your every need!</p>
+  <p>一般來說級別越高的標題其字型也越大，H1的字型最大，因為一般來說字型越大它表示的內容就越重要，此外一般標題都使用粗體字，來突出它們的重要性。一般來說H2使用粗體字，其字型比H3大，比H1小。這些資訊是顯示用的資訊。</p>
+  <p>CSS可以有多種引入方式，一個網頁可以引入多個CSS檔案，同一種CSS規則可以被反覆多次添加。這使得CSS的使用方式非常靈活，但也會頻繁地出現規則衝突。同時對一個網頁元素設定無法並存的2種樣式時，就會引起衝突。CSS的特色之一就是其解決規則衝突的方案。CSS的規則衝突可以分為不同來源之間的規則衝突和同一來源內部的規則衝突。CSS分層次、立體化的比較不同規則的優先級的方式，就是所謂層疊性(cascading)的體現。</p>
+</div>
+</body>
+</html>
